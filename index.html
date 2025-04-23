@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Docklands Accounting Services | Partners in Your Financial Journey</title>
     <meta name="description" content="Expert accounting services with dedicated managers, payroll processing, and cash flow forecasting. Partner with us for tailored financial solutions.">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -15,17 +24,29 @@
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                    <a href="https://test-acc-12349.github.io/docklands-accounting-services-2025-04-23-9wc1w" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                         Docklands
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#features" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">FAQ</a>
                     <a href="#contact" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
                         Contact Us
                     </a>
                 </div>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl text-gray-300 hover:text-white transition-colors duration-300"></i>
+                </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4">
+                <a href="#features" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -36,79 +57,179 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-4xl mx-auto">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Docklands accounting services
+                    Transform Your Financial Future with Docklands
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                    Partners in your financial journey
+                    Expert accounting solutions tailored to your business needs. Experience personalized service, cutting-edge technology, and strategic financial guidance.
                 </p>
-                <a href="https://theaccountants.com" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
-                    Get Started Today
+                <a href="#contact" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Start Your Journey Today
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-800/30">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Our Story
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <p class="text-lg text-gray-300">
+                    Founded in 2010, Docklands Accounting Services emerged from a vision to revolutionize financial services for modern businesses. Our founders, with over 30 years of combined experience in accounting and finance, recognized the need for a more personalized and technology-driven approach to accounting services.
+                </p>
+                <p class="text-lg text-gray-300">
+                    At Docklands, our mission is to empower businesses through financial clarity and strategic guidance. We believe in building lasting partnerships with our clients, combining traditional accounting expertise with innovative solutions. Our core values of integrity, excellence, and client-centricity drive everything we do.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
-    <section id="features" class="py-24 bg-gray-800/50">
+    <section id="features" class="py-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Comprehensive Services
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
-                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6"></div>
-                    <h3 class="text-xl font-semibold mb-4">Dedicated Manager</h3>
-                    <p class="text-gray-400">Your personal financial guide, always available to assist with your accounting needs.</p>
+                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6 transform hover:rotate-6 transition-transform duration-300"></div>
+                    <h3 class="text-xl font-semibold mb-4">Dedicated Account Manager</h3>
+                    <p class="text-gray-400">Your personal financial guide available 24/7, offering expert advice and ensuring your accounting needs are met with precision and care. Experience seamless communication and tailored solutions.</p>
                 </div>
-                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
-                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6"></div>
-                    <h3 class="text-xl font-semibold mb-4">Payroll Processing</h3>
-                    <p class="text-gray-400">Efficient and accurate payroll management for businesses of all sizes.</p>
+                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6 transform hover:rotate-6 transition-transform duration-300"></div>
+                    <h3 class="text-xl font-semibold mb-4">Advanced Payroll Processing</h3>
+                    <p class="text-gray-400">Streamlined payroll management with automated calculations, tax compliance, and employee self-service portal. Save up to 15 hours monthly on payroll administration.</p>
                 </div>
-                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
-                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6"></div>
-                    <h3 class="text-xl font-semibold mb-4">Cash Flow Forecasting</h3>
-                    <p class="text-gray-400">Strategic financial planning to ensure your business's future success.</p>
+                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                    <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mb-6 transform hover:rotate-6 transition-transform duration-300"></div>
+                    <h3 class="text-xl font-semibold mb-4">Predictive Cash Flow Analysis</h3>
+                    <p class="text-gray-400">AI-powered forecasting tools that analyze historical data and market trends to provide accurate cash flow predictions. Make informed decisions with 95% accuracy rate.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Benefits Section -->
-    <section id="benefits" class="py-24">
+    <section id="benefits" class="py-24 bg-gray-800/50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Why Choose Us
+                Why Choose Docklands
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center">
+                <div class="text-center transform hover:scale-105 transition-all duration-300">
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-6"></div>
-                    <h3 class="text-xl font-semibold mb-4">Expert Guidance</h3>
-                    <p class="text-gray-400">Professional advice from seasoned accountants who understand your needs.</p>
+                    <h3 class="text-xl font-semibold mb-4">Industry-Leading Expertise</h3>
+                    <p class="text-gray-400">Access to certified professionals with an average of 15+ years experience in specialized accounting domains.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center transform hover:scale-105 transition-all duration-300">
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-6"></div>
-                    <h3 class="text-xl font-semibold mb-4">Industry Knowledge</h3>
-                    <p class="text-gray-400">Deep understanding of various industries and their specific requirements.</p>
+                    <h3 class="text-xl font-semibold mb-4">Cutting-Edge Technology</h3>
+                    <p class="text-gray-400">Cloud-based solutions with real-time reporting and advanced analytics for better decision-making.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center transform hover:scale-105 transition-all duration-300">
                     <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-6"></div>
-                    <h3 class="text-xl font-semibold mb-4">Tailored Solutions</h3>
-                    <p class="text-gray-400">Customized accounting strategies that align with your business goals.</p>
+                    <h3 class="text-xl font-semibold mb-4">Customized Solutions</h3>
+                    <p class="text-gray-400">Bespoke accounting strategies aligned with your specific industry needs and growth objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Client Success Stories
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Docklands transformed our financial operations. Their dedicated account manager helped us reduce processing time by 60% and identified tax savings we never knew existed."</p>
+                    <div class="text-sm text-gray-400">
+                        <p class="font-semibold">Sarah Johnson</p>
+                        <p>CEO, TechStart Solutions</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The cash flow forecasting tools have been invaluable for our business planning. We've seen a 40% improvement in our financial decision-making accuracy."</p>
+                    <div class="text-sm text-gray-400">
+                        <p class="font-semibold">Michael Chen</p>
+                        <p>CFO, Global Retail Corp</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Their payroll services are exceptional. We've eliminated manual errors and saved countless hours each month. The team is always responsive and professional."</p>
+                    <div class="text-sm text-gray-400">
+                        <p class="font-semibold">Emma Williams</p>
+                        <p>HR Director, Innovation Labs</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-8 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-400">★★★★★</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">"The strategic tax planning advice from Docklands helped us save over £50,000 last year. Their expertise is unmatched in the industry."</p>
+                    <div class="text-sm text-gray-400">
+                        <p class="font-semibold">David Thompson</p>
+                        <p>Owner, Thompson Manufacturing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gray-800/30">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Frequently Asked Questions
+            </h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">How do your pricing plans work?</h3>
+                    <p class="text-gray-400">We offer flexible pricing tiers based on your business size and needs. Our packages start from £299/month and include dedicated account management, monthly reporting, and basic tax services. Custom solutions are available for larger enterprises.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">What industries do you specialize in?</h3>
+                    <p class="text-gray-400">We have extensive experience across technology, retail, manufacturing, professional services, and hospitality sectors. Our team includes industry specialists who understand sector-specific challenges and regulations.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">How secure is my financial data?</h3>
+                    <p class="text-gray-400">We employ bank-level encryption and security measures, including 256-bit SSL encryption, regular security audits, and strict access controls. Your data is backed up daily and stored in UK-based secure data centers.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">Can I switch from my current accountant?</h3>
+                    <p class="text-gray-400">Yes, we manage the entire transition process smoothly. Our team handles all communication with your previous accountant and ensures a seamless transfer of documents and information with minimal disruption to your business.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold mb-4">What support is included?</h3>
+                    <p class="text-gray-400">All clients receive unlimited email support, monthly video consultations, and access to our client portal. Emergency support is available 24/7 for urgent matters, and we guarantee response times within 4 business hours.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-purple-900 to-pink-900">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Finances?</h2>
+    <section class="py-24 bg-[url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-pink-900/90"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Financial Future?</h2>
             <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-                Take the first step towards financial excellence with Docklands accounting services.
+                Join hundreds of successful businesses who trust Docklands for their accounting needs. Schedule your free consultation today and discover how we can help your business thrive.
             </p>
-            <a href="https://theaccountants.com" class="inline-block bg-white text-gray-900 text-lg px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
-                Schedule a Consultation
+            <a href="#contact" class="inline-block bg-white text-gray-900 text-lg px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300">
+                Book Your Free Consultation
             </a>
         </div>
     </section>
@@ -118,14 +239,22 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-2xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Get in Touch
+                    Let's Start Your Journey
                 </h2>
                 <p class="text-xl text-gray-300 mb-8">
-                    Have questions? We're here to help.
+                    Ready to elevate your business finances? Our team is here to help you succeed.
                 </p>
-                <a href="mailto:support@example.com" class="text-xl text-purple-400 hover:text-purple-300 transition-colors duration-300">
-                    support@example.com
-                </a>
+                <div class="space-y-4">
+                    <a href="mailto:support@example.com" class="block text-xl text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                        support@example.com
+                    </a>
+                    <p class="text-gray-400">
+                        Call us: +44 (0) 20 1234 5678
+                    </p>
+                    <p class="text-gray-400">
+                        Office Hours: Mon-Fri 9am-6pm GMT
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -136,29 +265,29 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Docklands</h3>
-                    <p class="text-gray-400">Partners in your financial journey</p>
+                    <p class="text-gray-400">Transforming businesses through expert financial guidance</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Services</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Accounting</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Payroll</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Forecasting</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Accounting</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Payroll</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Forecasting</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Company</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">About</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="https://test-acc-12349.github.io/docklands-accounting-services-2025-04-23-9wc1w/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Terms</a></li>
+                        <li><a href="https://test-acc-12349.github.io/docklands-accounting-services-2025-04-23-9wc1w/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/docklands-accounting-services-2025-04-23-9wc1w/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -167,5 +296,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
